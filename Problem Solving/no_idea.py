@@ -25,35 +25,16 @@ def findHappiness(n, a, b):
     
     print(value_a - value_b)
     
-import time
-start = time.time()    
-inputFn = "input06.txt"
-
-with open(inputFn) as inputFileHandle:
-    file = inputFileHandle.read()
+    A = set(a)
+    B = set(b)
     
-x = [s.strip() for s in file.splitlines()]
-n = x[1].split()
-a = x[2].split()
-b = x[3].split()
+    print(sum([(i in A) - (i in B) for i in n]))
+
+n = [1,5,3]
+a = [3,1]
+b = [5,7]    
 findHappiness(n,a,b)
-end = time.time()
 
-print(end-start)
-'''
-n = 100000
-a = 14544
-b = 14544
-
-a + b = 29088
-faltu = 85268
-
-set(n) = 90641
-
-
-
-
-'''
 
 
 
