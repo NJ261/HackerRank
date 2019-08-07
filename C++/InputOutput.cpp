@@ -1,8 +1,12 @@
 #include <iostream>
 
 int main() {
-    int a, b, c;
-    std::cin >> a >> b >> c;
-    std::cout << a+b+c << std::endl;
+    int a;
+    long b;
+    char c;
+    float d;
+    double e;
+    scanf("%d %ld %c %f %lf", &a, &b, &c, &d, &e);
+    printf("%d \n%ld \n%c \n%f \n%f",a, b, c, d, e);
     return 0;
 }

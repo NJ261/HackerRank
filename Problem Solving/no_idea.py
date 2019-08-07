@@ -8,23 +8,6 @@ Created on Thu Jun  6 19:42:48 2019
 
 def findHappiness(n, a, b):
     
-    a_plus_b = set().union(a,b)
-    faltu = list(set(n) - set(a_plus_b))
-    
-    a_numbers = list(set(n) - set(faltu) - set(b))
-    b_numbers = list(set(n) - set(faltu) - set(a))
-    
-    value_a = 0
-    value_b = 0
-        
-    for i in a_numbers:
-        value_a += n.count(i)
-        
-    for j in b_numbers:
-        value_b += n.count(j)
-    
-    print(value_a - value_b)
-    
     A = set(a)
     B = set(b)
     
