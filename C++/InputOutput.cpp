@@ -1,12 +1,24 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
-int main() {
-    int a;
-    long b;
-    char c;
-    float d;
-    double e;
-    scanf("%d %ld %c %f %lf", &a, &b, &c, &d, &e);
-    printf("%d \n%ld \n%c \n%f \n%f",a, b, c, d, e);
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    int a[n];
+    int temp;
+
+    for (int k = 0; k < n; ++k) {
+        std::cin >> temp;
+        a[k] = temp;
+    }
+
+    for (int j = n-1; j >= 0; --j) {
+        cout << a[j] << ' ';
+    }
+
     return 0;
 }
